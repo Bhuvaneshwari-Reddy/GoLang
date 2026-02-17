@@ -14,4 +14,3 @@ func TestUserCreation(t *testing.T) {
 	require.Equal(t, "John", u.Name, "user name should match")
 	require.Equal(t, "john@example.com", u.Email, "user email should match")
 }
-

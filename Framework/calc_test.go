@@ -16,6 +16,7 @@ func TestAdd(t *testing.T) {
 }
 
 func TestAddWithTestify(t *testing.T) {
+
 	result := Add(2, 4)
 	expected := 6
 
@@ -29,16 +30,11 @@ type MyObject struct {
 func TestSuiteExample(t *testing.T) {
 	a := 10
 	b := &a
-	fmt.Printf("Test", b)
+	fmt.Printf("Test %v\n", b)
 }
 
-func TestSomething(t *testing.T) {
-	var object *MyObject
-	assert.Equal(t, 132, 132, "They should be equal")
-	assert.NotEqual(t, 134, 143, "They are not equal")
-	assert.Nil(t, object)
-	object = &MyObject{Value: "Something"}
-	if assert.NotNil(t, object) {
-		assert.Equal(t, "Something", object.Value)
-	}
+func TestSuiteExampleAdd(t *testing.T) {
+	x := 20
+	y := &x
+	fmt.Printf("Test %v\n", y)
 }
